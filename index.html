@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #e8f4f8 0%, #f0e6f6 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -22,16 +22,16 @@
         }
 
         .container {
-            background: white;
+            background: #fdfeff;
             border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
             max-width: 800px;
             width: 100%;
             padding: 40px;
         }
 
         h1 {
-            color: #333;
+            color: #4a5568;
             text-align: center;
             margin-bottom: 30px;
             font-size: 2em;
@@ -40,7 +40,7 @@
         .progress-bar {
             width: 100%;
             height: 10px;
-            background: #e0e0e0;
+            background: #e8f0f2;
             border-radius: 10px;
             margin-bottom: 30px;
             overflow: hidden;
@@ -48,7 +48,7 @@
 
         .progress-fill {
             height: 100%;
-            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(90deg, #7fb3d5 0%, #a8d5ba 100%);
             width: 0%;
             transition: width 0.3s ease;
         }
@@ -58,14 +58,14 @@
         }
 
         .question-number {
-            color: #667eea;
+            color: #5a9fb5;
             font-weight: bold;
             margin-bottom: 10px;
         }
 
         .question {
             font-size: 1.2em;
-            color: #333;
+            color: #4a5568;
             margin-bottom: 20px;
             line-height: 1.5;
         }
@@ -78,32 +78,32 @@
 
         .option {
             padding: 15px 20px;
-            border: 2px solid #e0e0e0;
+            border: 2px solid #e3ecf0;
             border-radius: 10px;
             cursor: pointer;
             transition: all 0.3s ease;
-            background: white;
+            background: #fafcfd;
         }
 
         .option:hover {
-            border-color: #667eea;
-            background: #f8f9ff;
+            border-color: #7fb3d5;
+            background: #f0f7fa;
             transform: translateX(5px);
         }
 
         .option.selected {
-            border-color: #667eea;
-            background: #f8f9ff;
+            border-color: #7fb3d5;
+            background: #f0f7fa;
         }
 
         .option.correct {
-            border-color: #4CAF50;
-            background: #e8f5e9;
+            border-color: #81c995;
+            background: #f0f9f3;
         }
 
         .option.incorrect {
-            border-color: #f44336;
-            background: #ffebee;
+            border-color: #e8a5a0;
+            background: #fdf5f4;
         }
 
         .option.disabled {
@@ -129,13 +129,13 @@
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #7fb3d5 0%, #a8d5ba 100%);
             color: white;
         }
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 5px 15px rgba(127, 179, 213, 0.3);
         }
 
         .btn-primary:disabled {
@@ -145,12 +145,12 @@
         }
 
         .btn-secondary {
-            background: #e0e0e0;
-            color: #333;
+            background: #e8f0f2;
+            color: #4a5568;
         }
 
         .btn-secondary:hover {
-            background: #d0d0d0;
+            background: #d9e8ec;
         }
 
         .result-container {
@@ -160,19 +160,19 @@
 
         .score {
             font-size: 3em;
-            color: #667eea;
+            color: #7fb3d5;
             margin: 20px 0;
             font-weight: bold;
         }
 
         .message {
             font-size: 1.3em;
-            color: #333;
+            color: #4a5568;
             margin-bottom: 30px;
         }
 
         .stats {
-            background: #f8f9ff;
+            background: #f5f9fa;
             padding: 20px;
             border-radius: 10px;
             margin: 20px 0;
@@ -182,7 +182,7 @@
             display: flex;
             justify-content: space-between;
             padding: 10px 0;
-            border-bottom: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e3ecf0;
         }
 
         .stat-row:last-child {
@@ -202,15 +202,15 @@
         }
 
         .feedback.correct {
-            background: #e8f5e9;
-            color: #2e7d32;
-            border-left: 4px solid #4CAF50;
+            background: #f0f9f3;
+            color: #2d6a3e;
+            border-left: 4px solid #81c995;
         }
 
         .feedback.incorrect {
-            background: #ffebee;
-            color: #c62828;
-            border-left: 4px solid #f44336;
+            background: #fdf5f4;
+            color: #a64942;
+            border-left: 4px solid #e8a5a0;
         }
 
         /* Nouvelles améliorations UX/UI */
@@ -228,7 +228,7 @@
             width: 25px;
             height: 25px;
             border-radius: 50%;
-            background: #667eea;
+            background: #7fb3d5;
             color: white;
             display: flex;
             align-items: center;
@@ -239,12 +239,12 @@
 
         .option.correct::before {
             content: '✓';
-            background: #4CAF50;
+            background: #81c995;
         }
 
         .option.incorrect::before {
             content: '✗';
-            background: #f44336;
+            background: #e8a5a0;
         }
 
         .feedback strong {
@@ -487,7 +487,7 @@
                     "Lire les actualités dans les journaux"
                 ],
                 correct: 0,
-                explanation: "Voter aux élections est un acte citoyen direct qui permet de participer à la vie démocratique du pays. Les autres actions, bien qu'utiles pour s'informer, ne constituent pas une participation citoyenne active."
+                explanation: "Voter aux élections est un acte citoyen direct qui permet de participer à la vie démocratique du pays. Les autres actions, bien qu'utiles pour s'informer, ne constituent pas une participation citoyenne active.\n\n💡 Astuce pour retenir : VOTER = AGIR ! Regarder/Lire/Critiquer = S'informer (passif), Voter = Participer (actif)."
             },
             {
                 question: "Que garantit la liberté d'expression ?",
@@ -498,7 +498,7 @@
                     "Le droit de publier des informations confidentielles"
                 ],
                 correct: 1,
-                explanation: "La liberté d'expression garantit le droit d'exprimer ses opinions, mais elle n'est pas absolue. Elle doit s'exercer dans le respect de la loi et ne permet pas l'injure, la diffamation, l'incitation à la haine ou la violence."
+                explanation: "La liberté d'expression garantit le droit d'exprimer ses opinions, mais elle n'est pas absolue. Elle doit s'exercer dans le respect de la loi et ne permet pas l'injure, la diffamation, l'incitation à la haine ou la violence.\n\n💡 Astuce pour retenir : Liberté OUI, mais AVEC la loi (pas 'tout ce qu'on veut'). Pensez 'Liberté encadrée' pas 'Liberté absolue'."
             },
             {
                 question: "À quoi sert un titre de séjour ?",
@@ -509,7 +509,7 @@
                     "À obtenir automatiquement la citoyenneté française"
                 ],
                 correct: 1,
-                explanation: "Un titre de séjour est un document administratif qui autorise un ressortissant étranger à résider sur le territoire français pour une durée déterminée. Il ne confère pas la nationalité française."
+                explanation: "Un titre de séjour est un document administratif qui autorise un ressortissant étranger à résider sur le territoire français pour une durée déterminée. Il ne confère pas la nationalité française.\n\n💡 Astuce pour retenir : Titre de SÉJOUR = autorisation de SÉJOURNER (rester). Comme un 'ticket' pour habiter en France."
             },
             {
                 question: "La liberté de circulation permet à toute personne de :",
@@ -520,7 +520,7 @@
                     "Franchir les frontières sans contrôle ni document"
                 ],
                 correct: 1,
-                explanation: "La liberté de circulation permet à toute personne de se déplacer librement sur le territoire français, de choisir son lieu de résidence et de voyager, sous réserve du respect des lois et réglementations."
+                explanation: "La liberté de circulation permet à toute personne de se déplacer librement sur le territoire français, de choisir son lieu de résidence et de voyager, sous réserve du respect des lois et réglementations.\n\n💡 Astuce pour retenir : CIRCULATION = se déplacer LIBREMENT sur le territoire. Pas 'gratuit' ni 'sans document', juste 'libre de bouger'."
             },
             {
                 question: "Sur quel site internet peut-on retrouver le symbole de la République française ?",
@@ -531,7 +531,7 @@
                     "www.google.fr"
                 ],
                 correct: 0,
-                explanation: "Le site officiel de l'administration française www.service-public.fr affiche les symboles de la République française, notamment Marianne, le drapeau tricolore et la devise républicaine."
+                explanation: "Le site officiel de l'administration française www.service-public.fr affiche les symboles de la République française, notamment Marianne, le drapeau tricolore et la devise républicaine.\n\n💡 Astuce pour retenir : SERVICE-PUBLIC.fr = site OFFICIEL avec symboles OFFICIELS (pas Wikipedia qui est collaboratif)."
             },
             {
                 question: "Complétez ces paroles de la Marseillaise : \"Aux armes […] ! Formez vos bataillons\"",
@@ -542,7 +542,7 @@
                     "Aux armes, patriotes"
                 ],
                 correct: 1,
-                explanation: "Les paroles exactes sont 'Aux armes, citoyens ! Formez vos bataillons'. Ce refrain de la Marseillaise appelle tous les citoyens à défendre la patrie, soulignant que la défense de la nation est l'affaire de tous."
+                explanation: "Les paroles exactes sont 'Aux armes, citoyens ! Formez vos bataillons'. Ce refrain de la Marseillaise appelle tous les citoyens à défendre la patrie, soulignant que la défense de la nation est l'affaire de tous.\n\n💡 Astuce pour retenir : CITOYENS (pas soldats) → c'est l'appel à TOUS, pas seulement aux militaires. Révolution = peuple."
             },
             {
                 question: "Complétez les paroles de la Marseillaise : \"Allons enfants de la patrie […]\"",
@@ -553,7 +553,7 @@
                     "L'heure de liberté est arrivée"
                 ],
                 correct: 1,
-                explanation: "Le premier vers de la Marseillaise est 'Allons enfants de la patrie, le jour de gloire est arrivé'. Cet hymne national a été composé par Rouget de Lisle en 1792 pendant la Révolution française."
+                explanation: "Le premier vers de la Marseillaise est 'Allons enfants de la patrie, le jour de gloire est arrivé'. Cet hymne national a été composé par Rouget de Lisle en 1792 pendant la Révolution française.\n\n💡 Astuce pour retenir : Jour de GLOIRE (victoire espérée), pas 'guerre' ou 'victoire' déjà acquise. GLOIRE rime avec HISTOIRE."
             },
             {
                 question: "En application de la liberté individuelle, quelle proposition est correcte ? Une personne peut :",
@@ -564,7 +564,7 @@
                     "Faire tout ce qu'elle veut sans contrainte"
                 ],
                 correct: 1,
-                explanation: "La liberté individuelle permet à chacun de choisir son mode de vie, ses convictions, sa profession, etc., mais toujours dans le respect de la loi et des droits d'autrui. Elle n'est pas absolue."
+                explanation: "La liberté individuelle permet à chacun de choisir son mode de vie, ses convictions, sa profession, etc., mais toujours dans le respect de la loi et des droits d'autrui. Elle n'est pas absolue.\n\n💡 Astuce pour retenir : Choisir librement DANS le respect de la loi (pas 'tout ce qu'on veut', pas 'refuser les lois')."
             },
             {
                 question: "Concernant la pratique de la religion, quelle proposition est correcte ?",
@@ -575,7 +575,7 @@
                     "La religion doit être pratiquée uniquement en privé"
                 ],
                 correct: 1,
-                explanation: "En France, grâce au principe de laïcité et à la liberté de conscience, chacun est libre de pratiquer la religion de son choix, de changer de religion ou de ne pas en avoir. Cette liberté est garantie par la loi."
+                explanation: "En France, grâce au principe de laïcité et à la liberté de conscience, chacun est libre de pratiquer la religion de son choix, de changer de religion ou de ne pas en avoir. Cette liberté est garantie par la loi.\n\n💡 Astuce pour retenir : LIBRE = pratiquer OU NON (pas 'obligatoire', pas 'privé seulement', pas 'certaines autorisées')."
             },
             {
                 question: "En tant que parent, peut-on refuser que son enfant participe aux cours de sport à l'école car ils sont mixtes ?",
@@ -586,7 +586,7 @@
                     "Oui, mais seulement pour les filles"
                 ],
                 correct: 1,
-                explanation: "Non, on ne peut pas refuser que son enfant participe aux cours obligatoires de l'école publique, y compris les cours de sport mixtes. L'instruction est obligatoire et le programme scolaire doit être respecté par tous."
+                explanation: "Non, on ne peut pas refuser que son enfant participe aux cours obligatoires de l'école publique, y compris les cours de sport mixtes. L'instruction est obligatoire et le programme scolaire doit être respecté par tous.\n\n💡 Astuce pour retenir : Scolarité OBLIGATOIRE = TOUS les cours obligatoires (pas de dérogation pour religion ou autre)."
             },
             {
                 question: "Quelle est la devise de la France ?",
@@ -597,7 +597,7 @@
                     "Unité et Indivisibilité"
                 ],
                 correct: 1,
-                explanation: "La devise de la République française est 'Liberté, Égalité, Fraternité'. Elle est inscrite dans la Constitution et figure sur les bâtiments publics. Elle trouve son origine dans la Révolution française de 1789."
+                explanation: "La devise de la République française est 'Liberté, Égalité, Fraternité'. Elle est inscrite dans la Constitution et figure sur les bâtiments publics. Elle trouve son origine dans la Révolution française de 1789.\n\n💡 Astuce pour retenir : 3 mots qui finissent par -TÉ : LiberTÉ, ÉgaliTÉ, FraterniTÉ (L-É-F). Sur les mairies !"
             },
             {
                 question: "La répudiation de sa femme est :",
@@ -608,7 +608,7 @@
                     "Possible devant un notaire"
                 ],
                 correct: 1,
-                explanation: "La répudiation est strictement interdite en France. Le mariage ne peut être dissous que par le divorce, prononcé par un juge, qui garantit l'égalité des droits entre les époux. La répudiation est contraire aux principes d'égalité homme-femme."
+                explanation: "La répudiation est strictement interdite en France. Le mariage ne peut être dissous que par le divorce, prononcé par un juge, qui garantit l'égalité des droits entre les époux. La répudiation est contraire aux principes d'égalité homme-femme.\n\n💡 Astuce pour retenir : Répudiation = INTERDITE en France (contraire à l'égalité). Seul le DIVORCE par juge est légal."
             },
             {
                 question: "Les impôts permettent de financer les dépenses publiques. Quelle proposition est correcte ?",
@@ -619,7 +619,7 @@
                     "Les étrangers ne paient pas d'impôts en France"
                 ],
                 correct: 1,
-                explanation: "En France, chacun contribue aux dépenses publiques selon ses capacités financières. C'est le principe de l'égalité devant l'impôt : tout le monde paie des impôts (même indirects comme la TVA), mais leur montant varie selon les revenus."
+                explanation: "En France, chacun contribue aux dépenses publiques selon ses capacités financières. C'est le principe de l'égalité devant l'impôt : tout le monde paie des impôts (même indirects comme la TVA), mais leur montant varie selon les revenus.\n\n💡 Astuce pour retenir : CHACUN selon ses MOYENS (pas 'seulement les riches', pas 'facultatif', TOUS paient)."
             },
             {
                 question: "Peut-on brûler publiquement un drapeau français ?",
@@ -630,7 +630,7 @@
                     "Non, sauf si on a l'autorisation de la mairie"
                 ],
                 correct: 1,
-                explanation: "Brûler publiquement un drapeau français est interdit et constitue une infraction punie par la loi. L'outrage au drapeau tricolore ou à l'hymne national est sanctionné pénalement car ce sont des symboles de la République."
+                explanation: "Brûler publiquement un drapeau français est interdit et constitue une infraction punie par la loi. L'outrage au drapeau tricolore ou à l'hymne national est sanctionné pénalement car ce sont des symboles de la République.\n\n💡 Astuce pour retenir : Brûler le drapeau = OUTRAGE au symbole = INTERDIT et punissable (respect des symboles)."
             },
             {
                 question: "Que fait l'État pour lutter contre les discriminations ?",
@@ -641,7 +641,7 @@
                     "Il intervient uniquement dans les entreprises publiques"
                 ],
                 correct: 1,
-                explanation: "L'État français lutte activement contre les discriminations en votant des lois qui les interdisent et les sanctionnent. Des institutions comme le Défenseur des droits veillent à faire respecter l'égalité de traitement."
+                explanation: "L'État français lutte activement contre les discriminations en votant des lois qui les interdisent et les sanctionnent. Des institutions comme le Défenseur des droits veillent à faire respecter l'égalité de traitement.\n\n💡 Astuce pour retenir : L'État VOTE des LOIS pour INTERDIRE et SANCTIONNER (pas juste 'conseiller' ou 'rien')."
             },
             {
                 question: "Que représente Marianne ?",
@@ -652,7 +652,7 @@
                     "La liberté d'expression"
                 ],
                 correct: 2,
-                explanation: "Marianne est la représentation symbolique de la République française. Son buste est présent dans toutes les mairies. Elle incarne les valeurs de la République : Liberté, Égalité, Fraternité."
+                explanation: "Marianne est la représentation symbolique de la République française. Son buste est présent dans toutes les mairies. Elle incarne les valeurs de la République : Liberté, Égalité, Fraternité.\n\n💡 Astuce pour retenir : MARIANNE = LA RÉPUBLIQUE (pas une personne réelle, c'est un symbole). Buste dans les mairies."
             },
             {
                 question: "Qu'est-ce que la liberté d'association ?",
@@ -663,7 +663,7 @@
                     "Le droit de manifester dans la rue"
                 ],
                 correct: 0,
-                explanation: "La liberté d'association, garantie par la loi de 1901, permet à toute personne de créer une association à but non lucratif et d'y adhérer librement, dans le respect de la loi et de l'ordre public."
+                explanation: "La liberté d'association, garantie par la loi de 1901, permet à toute personne de créer une association à but non lucratif et d'y adhérer librement, dans le respect de la loi et de l'ordre public.\n\n💡 Astuce pour retenir : Loi de 1901 = Association. CRÉER librement (pas obliger les autres à adhérer)."
             },
             {
                 question: "Qu'est-ce que la liberté ?",
@@ -674,7 +674,7 @@
                     "Refuser d'obéir aux autorités"
                 ],
                 correct: 1,
-                explanation: "La liberté est le pouvoir d'agir selon sa volonté, dans les limites fixées par la loi et le respect des droits d'autrui. Comme le dit l'adage : 'La liberté des uns s'arrête là où commence celle des autres'."
+                explanation: "La liberté est le pouvoir d'agir selon sa volonté, dans les limites fixées par la loi et le respect des droits d'autrui. Comme le dit l'adage : 'La liberté des uns s'arrête là où commence celle des autres'.\n\n💡 Astuce pour retenir : Liberté = AGIR selon sa volonté DANS les limites de la loi (pas 'sans contrainte')."
             },
             {
                 question: "Qu'est-ce que la Marseillaise ?",
@@ -685,7 +685,7 @@
                     "Le nom d'un monument à Paris"
                 ],
                 correct: 1,
-                explanation: "La Marseillaise est l'hymne national de la France. Composée par Rouget de Lisle en 1792 à Strasbourg, elle a été adoptée comme chant national pendant la Révolution française et est devenue hymne national officiel en 1879."
+                explanation: "La Marseillaise est l'hymne national de la France. Composée par Rouget de Lisle en 1792 à Strasbourg, elle a été adoptée comme chant national pendant la Révolution française et est devenue hymne national officiel en 1879.\n\n💡 Astuce pour retenir : La Marseillaise = HYMNE national (pas une danse, pas un monument). Chant de la France."
             },
             {
                 question: "Qui a écrit La Marseillaise ?",
@@ -696,7 +696,7 @@
                     "Jean-Jacques Rousseau"
                 ],
                 correct: 1,
-                explanation: "La Marseillaise a été écrite (paroles et musique) par Claude Joseph Rouget de Lisle, officier du génie et poète. Il l'a composée dans la nuit du 25 au 26 avril 1792 à Strasbourg, à la demande du maire de la ville qui voulait un chant pour les troupes partant au front."
+                explanation: "La Marseillaise a été écrite (paroles et musique) par Claude Joseph Rouget de Lisle, officier du génie et poète. Il l'a composée dans la nuit du 25 au 26 avril 1792 à Strasbourg, à la demande du maire de la ville qui voulait un chant pour les troupes partant au front.\n\n💡 Astuce pour retenir : ROUGET de LISLE (pas Hugo, pas Bonaparte). Pensez 'ROUGE et bleu' (drapeau)."
             },
             {
                 question: "Quand La Marseillaise a-t-elle été écrite ?",
@@ -707,7 +707,7 @@
                     "En 1879, sous la IIIème République"
                 ],
                 correct: 1,
-                explanation: "La Marseillaise a été composée en 1792, dans la nuit du 25 au 26 avril, par Rouget de Lisle à Strasbourg. C'était pendant la Révolution française, au moment où la France déclarait la guerre à l'Autriche. Elle s'appelait initialement 'Chant de guerre pour l'Armée du Rhin'."
+                explanation: "La Marseillaise a été composée en 1792, dans la nuit du 25 au 26 avril, par Rouget de Lisle à Strasbourg. C'était pendant la Révolution française, au moment où la France déclarait la guerre à l'Autriche. Elle s'appelait initialement 'Chant de guerre pour l'Armée du Rhin'.\n\n💡 Astuce pour retenir : 1792 = Révolution (1789+3 ans). Pensez '17-92' → 1+7 = 8, proche de 1789."
             },
             {
                 question: "Où La Marseillaise a-t-elle été écrite ?",
@@ -718,7 +718,7 @@
                     "À Lyon"
                 ],
                 correct: 1,
-                explanation: "La Marseillaise a été écrite à Strasbourg en 1792 par Rouget de Lisle. Contrairement à ce que son nom pourrait suggérer, elle n'a pas été composée à Marseille. Elle a pris le nom de 'Marseillaise' parce qu'elle a été chantée avec enthousiasme par les soldats marseillais montant à Paris pour défendre la Révolution."
+                explanation: "La Marseillaise a été écrite à Strasbourg en 1792 par Rouget de Lisle. Contrairement à ce que son nom pourrait suggérer, elle n'a pas été composée à Marseille. Elle a pris le nom de 'Marseillaise' parce qu'elle a été chantée avec enthousiasme par les soldats marseillais montant à Paris pour défendre la Révolution.\n\n💡 Astuce pour retenir : Écrite à STRASBOURG (pas Marseille !). STRAS-bourg dans l'EST, près du Rhin."
             },
             {
                 question: "Pourquoi le chant s'appelle-t-il 'La Marseillaise' ?",
@@ -729,7 +729,7 @@
                     "Parce qu'il parle de la ville de Marseille"
                 ],
                 correct: 1,
-                explanation: "Bien que composée à Strasbourg par Rouget de Lisle, la chanson s'appelle 'La Marseillaise' parce qu'elle a été reprise et chantée avec ferveur par les volontaires marseillais (les fédérés marseillais) lors de leur marche vers Paris en juillet 1792. C'est ce bataillon de Marseille qui l'a popularisée dans toute la France."
+                explanation: "Bien que composée à Strasbourg par Rouget de Lisle, la chanson s'appelle 'La Marseillaise' parce qu'elle a été reprise et chantée avec ferveur par les volontaires marseillais (les fédérés marseillais) lors de leur marche vers Paris en juillet 1792. C'est ce bataillon de Marseille qui l'a popularisée dans toute la France.\n\n💡 Astuce pour retenir : Nom 'Marseillaise' = soldats MARSEILLAIS l'ont chantée en marchant vers Paris (popularisée)."
             },
             {
                 question: "Quel était le titre original de La Marseillaise ?",
@@ -740,7 +740,7 @@
                     "Hymne de la Liberté"
                 ],
                 correct: 1,
-                explanation: "Le titre original de La Marseillaise était 'Chant de guerre pour l'Armée du Rhin'. Rouget de Lisle l'a composée en 1792 pour les troupes françaises qui partaient combattre les armées autrichiennes. Ce n'est que plus tard qu'elle a pris le nom de 'Marseillaise' grâce aux fédérés marseillais qui l'ont popularisée."
+                explanation: "Le titre original de La Marseillaise était 'Chant de guerre pour l'Armée du Rhin'. Rouget de Lisle l'a composée en 1792 pour les troupes françaises qui partaient combattre les armées autrichiennes. Ce n'est que plus tard qu'elle a pris le nom de 'Marseillaise' grâce aux fédérés marseillais qui l'ont popularisée.\n\n💡 Astuce pour retenir : Titre original = Chant de guerre pour l'Armée du RHIN (Strasbourg près du Rhin)."
             },
             {
                 question: "Quand La Marseillaise est-elle devenue officiellement hymne national de la France ?",
@@ -751,7 +751,7 @@
                     "En 1945, après la Seconde Guerre mondiale"
                 ],
                 correct: 1,
-                explanation: "La Marseillaise a été adoptée comme chant national par la Convention en 1795. Elle a ensuite été interdite sous l'Empire et la Restauration. C'est en 1879, sous la IIIème République, qu'elle est devenue définitivement et officiellement l'hymne national français. Elle est inscrite dans la Constitution."
+                explanation: "La Marseillaise a été adoptée comme chant national par la Convention en 1795. Elle a ensuite été interdite sous l'Empire et la Restauration. C'est en 1879, sous la IIIème République, qu'elle est devenue définitivement et officiellement l'hymne national français. Elle est inscrite dans la Constitution.\n\n💡 Astuce pour retenir : 1795 → 1879 définitivement (IIIème République). Pensez '1879' = 18-79 → fin 19ème siècle."
             },
             {
                 question: "Sur quel document peut-on voir Marianne ?",
@@ -762,7 +762,7 @@
                     "Sur les billets de banque en euros"
                 ],
                 correct: 2,
-                explanation: "On peut voir Marianne notamment sur les timbres-poste français, où elle est un symbole récurrent. Son buste est également présent dans toutes les mairies de France. Elle figure aussi sur certaines pièces de monnaie françaises."
+                explanation: "On peut voir Marianne notamment sur les timbres-poste français, où elle est un symbole récurrent. Son buste est également présent dans toutes les mairies de France. Elle figure aussi sur certaines pièces de monnaie françaises.\n\n💡 Astuce pour retenir : Marianne sur les TIMBRES-POSTE (pas cartes d'identité, pas billets euros)."
             },
             {
                 question: "Un employeur refuse d'embaucher des femmes dans son entreprise. Que dit la loi ?",
@@ -773,7 +773,7 @@
                     "C'est permis pour certains secteurs d'activité"
                 ],
                 correct: 1,
-                explanation: "Refuser d'embaucher quelqu'un en raison de son sexe est strictement interdit par la loi. C'est une discrimination sanctionnée pénalement. Le principe d'égalité entre les femmes et les hommes est garanti par la Constitution."
+                explanation: "Refuser d'embaucher quelqu'un en raison de son sexe est strictement interdit par la loi. C'est une discrimination sanctionnée pénalement. Le principe d'égalité entre les femmes et les hommes est garanti par la Constitution.\n\n💡 Astuce pour retenir : Refuser d'embaucher des femmes = DISCRIMINATION = INTERDIT (égalité constitutionnelle)."
             },
             {
                 question: "Une des valeurs de la devise républicaine est l'égalité. Qu'est-ce que cela signifie ?",
@@ -784,7 +784,7 @@
                     "Il ne doit pas y avoir de différences entre les personnes"
                 ],
                 correct: 0,
-                explanation: "L'égalité républicaine signifie que tous les citoyens sont égaux devant la loi, qu'ils ont les mêmes droits et les mêmes devoirs, sans distinction d'origine, de religion, de sexe ou de condition sociale."
+                explanation: "L'égalité républicaine signifie que tous les citoyens sont égaux devant la loi, qu'ils ont les mêmes droits et les mêmes devoirs, sans distinction d'origine, de religion, de sexe ou de condition sociale.\n\n💡 Astuce pour retenir : ÉGALITÉ = mêmes DROITS et mêmes DEVOIRS devant la LOI (pas 'même salaire', pas 'penser pareil')."
             },
             {
                 question: "Quelle est la place de la langue française dans la République ?",
@@ -795,7 +795,7 @@
                     "Elle est recommandée mais pas obligatoire"
                 ],
                 correct: 1,
-                explanation: "Selon l'article 2 de la Constitution, 'La langue de la République est le français'. Le français est donc la langue officielle de l'État, de l'enseignement, du travail, des échanges et des services publics."
+                explanation: "Selon l'article 2 de la Constitution, 'La langue de la République est le français'. Le français est donc la langue officielle de l'État, de l'enseignement, du travail, des échanges et des services publics.\n\n💡 Astuce pour retenir : Français = langue OFFICIELLE dans la CONSTITUTION (Article 2). Pas juste 'recommandé'."
             },
             {
                 question: "Quels sont des symboles officiels de la République française ?",
@@ -806,7 +806,7 @@
                     "La baguette et le vin"
                 ],
                 correct: 1,
-                explanation: "Les symboles officiels de la République française inscrits dans la Constitution sont : le drapeau bleu, blanc, rouge ; l'hymne national la Marseillaise ; la devise 'Liberté, Égalité, Fraternité' ; et Marianne qui représente la République."
+                explanation: "Les symboles officiels de la République française inscrits dans la Constitution sont : le drapeau bleu, blanc, rouge ; l'hymne national la Marseillaise ; la devise 'Liberté, Égalité, Fraternité' ; et Marianne qui représente la République.\n\n💡 Astuce pour retenir : 4 symboles = Drapeau tricolore, Marseillaise, Devise (LEF), Marianne. Pas coq, pas tour Eiffel."
             },
             {
                 question: "A-t-on le droit d'insulter publiquement quelqu'un parce qu'il est différent (handicap, apparence physique, sexe…) ?",
@@ -817,7 +817,7 @@
                     "Oui, si la personne ne porte pas plainte"
                 ],
                 correct: 1,
-                explanation: "Non, insulter quelqu'un en raison de son handicap, son apparence, son sexe, etc. est strictement interdit. C'est une injure discriminatoire, sanctionnée pénalement. La liberté d'expression ne permet pas de porter atteinte à la dignité d'autrui."
+                explanation: "Non, insulter quelqu'un en raison de son handicap, son apparence, son sexe, etc. est strictement interdit. C'est une injure discriminatoire, sanctionnée pénalement. La liberté d'expression ne permet pas de porter atteinte à la dignité d'autrui.\n\n💡 Astuce pour retenir : Insulte discriminatoire = INTERDIT et PUNI (liberté d'expression ne protège PAS les insultes)."
             },
             {
                 question: "Le régime de la France est :",
@@ -828,7 +828,7 @@
                     "Un empire"
                 ],
                 correct: 1,
-                explanation: "La France est une République démocratique, plus précisément une République indivisible, laïque, démocratique et sociale selon l'article 1er de la Constitution. Le régime actuel est la Ve République, instaurée en 1958."
+                explanation: "La France est une République démocratique, plus précisément une République indivisible, laïque, démocratique et sociale selon l'article 1er de la Constitution. Le régime actuel est la Ve République, instaurée en 1958.\n\n💡 Astuce pour retenir : France = RÉPUBLIQUE démocratique (pas monarchie, pas empire, pas dictature). Ve depuis 1958."
             },
             {
                 question: "Pourquoi le principe de laïcité doit-il être respecté à l'école ?",
@@ -839,7 +839,7 @@
                     "Pour favoriser l'athéisme"
                 ],
                 correct: 1,
-                explanation: "La laïcité à l'école garantit un environnement neutre où tous les élèves, quelles que soient leurs convictions, peuvent apprendre ensemble dans le respect mutuel. Elle protège la liberté de conscience de chacun."
+                explanation: "La laïcité à l'école garantit un environnement neutre où tous les élèves, quelles que soient leurs convictions, peuvent apprendre ensemble dans le respect mutuel. Elle protège la liberté de conscience de chacun.\n\n💡 Astuce pour retenir : Laïcité à l'école = environnement NEUTRE et RESPECTUEUX (pas 'interdire religion', pas 'athéisme')."
             },
             {
                 question: "En quelle année la loi de séparation des Églises et de l'État a-t-elle été votée ?",
@@ -850,7 +850,7 @@
                     "1881"
                 ],
                 correct: 1,
-                explanation: "La loi de séparation des Églises et de l'État a été votée le 9 décembre 1905. Cette loi fondamentale instaure la laïcité en France et établit la neutralité de l'État vis-à-vis des religions."
+                explanation: "La loi de séparation des Églises et de l'État a été votée le 9 décembre 1905. Cette loi fondamentale instaure la laïcité en France et établit la neutralité de l'État vis-à-vis des religions.\n\n💡 Astuce pour retenir : 1905 = loi LAÏCITÉ (début 20ème siècle). Pensez '19-05' → 1+9=10, 0+5=5."
             },
             {
                 question: "Une personne a-t-elle le droit de ne pas croire en une religion ?",
@@ -861,7 +861,7 @@
                     "Non, mais elle peut le garder secret"
                 ],
                 correct: 1,
-                explanation: "Oui, absolument. La liberté de conscience garantie par la laïcité permet à chacun de croire ou de ne pas croire, de pratiquer une religion ou d'être athée ou agnostique. C'est un droit fondamental."
+                explanation: "Oui, absolument. La liberté de conscience garantie par la laïcité permet à chacun de croire ou de ne pas croire, de pratiquer une religion ou d'être athée ou agnostique. C'est un droit fondamental.\n\n💡 Astuce pour retenir : Liberté de CONSCIENCE = droit de NE PAS croire (pas 'obligatoire d'avoir une religion')."
             },
             {
                 question: "Quel droit est garanti par la laïcité ?",
@@ -872,7 +872,7 @@
                     "L'interdiction des religions dans l'espace public"
                 ],
                 correct: 1,
-                explanation: "La laïcité garantit la liberté de conscience, c'est-à-dire le droit de croire ou de ne pas croire, de pratiquer ou non une religion, et de changer de conviction. Elle protège également l'égalité de tous devant la loi, quelles que soient leurs croyances."
+                explanation: "La laïcité garantit la liberté de conscience, c'est-à-dire le droit de croire ou de ne pas croire, de pratiquer ou non une religion, et de changer de conviction. Elle protège également l'égalité de tous devant la loi, quelles que soient leurs croyances.\n\n💡 Astuce pour retenir : Laïcité = LIBERTÉ de conscience ET pratiquer OU NON (choix personnel total)."
             },
             {
                 question: "À l'école publique, qui peut porter des signes religieux très visibles ?",
@@ -883,7 +883,7 @@
                     "Les élèves uniquement, pas le personnel"
                 ],
                 correct: 1,
-                explanation: "Depuis la loi de 2004, le port de signes religieux ostensibles (très visibles) est interdit à l'école publique, tant pour les élèves que pour le personnel. Cela garantit la neutralité de l'espace scolaire."
+                explanation: "Depuis la loi de 2004, le port de signes religieux ostensibles (très visibles) est interdit à l'école publique, tant pour les élèves que pour le personnel. Cela garantit la neutralité de l'espace scolaire.\n\n💡 Astuce pour retenir : École publique = PERSONNE ne porte signes ostensibles (ni élèves NI personnel). Loi 2004."
             },
             {
                 question: "Selon le principe de laïcité, que signifie la neutralité de l'État ?",
@@ -894,7 +894,7 @@
                     "L'État impose l'athéisme"
                 ],
                 correct: 1,
-                explanation: "La neutralité de l'État signifie qu'il ne reconnaît, ne salarie ni ne subventionne aucun culte. L'État est séparé des religions et ne privilégie aucune conviction, qu'elle soit religieuse ou athée."
+                explanation: "La neutralité de l'État signifie qu'il ne reconnaît, ne salarie ni ne subventionne aucun culte. L'État est séparé des religions et ne privilégie aucune conviction, qu'elle soit religieuse ou athée.\n\n💡 Astuce pour retenir : Neutralité État = NE reconnaît NI salarie NI subventionne AUCUN culte (séparation totale)."
             },
             {
                 question: "Que peut faire un usager du service public dans une mairie ?",
@@ -905,7 +905,7 @@
                     "Imposer ses pratiques religieuses"
                 ],
                 correct: 1,
-                explanation: "Dans un service public comme une mairie, tout usager doit être reçu de manière égale et neutre, quelles que soient ses convictions. Il ne peut ni imposer ses pratiques religieuses ni refuser un agent pour des raisons discriminatoires."
+                explanation: "Dans un service public comme une mairie, tout usager doit être reçu de manière égale et neutre, quelles que soient ses convictions. Il ne peut ni imposer ses pratiques religieuses ni refuser un agent pour des raisons discriminatoires.\n\n💡 Astuce pour retenir : Mairie (service public) = usager reçu de manière ÉGALE (pas imposer, pas refuser agent)."
             },
             {
                 question: "Qui doit respecter le principe de neutralité religieuse dans une préfecture ?",
@@ -916,7 +916,7 @@
                     "Personne, c'est facultatif"
                 ],
                 correct: 1,
-                explanation: "Tous les agents du service public (fonctionnaires, contractuels) doivent respecter le principe de neutralité religieuse dans l'exercice de leurs fonctions. Ils ne peuvent manifester leurs convictions religieuses."
+                explanation: "Tous les agents du service public (fonctionnaires, contractuels) doivent respecter le principe de neutralité religieuse dans l'exercice de leurs fonctions. Ils ne peuvent manifester leurs convictions religieuses.\n\n💡 Astuce pour retenir : Service public = TOUS les agents doivent être NEUTRES (fonctionnaires ET contractuels)."
             },
             {
                 question: "La laïcité impose-t-elle aux agents publics d'être neutres vis-à-vis des usagers ?",
@@ -927,7 +927,7 @@
                     "Uniquement les jours de fête religieuse"
                 ],
                 correct: 1,
-                explanation: "Oui, les agents publics ont une obligation stricte de neutralité. Ils doivent traiter tous les usagers de manière égale et ne peuvent manifester leurs convictions religieuses, politiques ou philosophiques dans l'exercice de leurs fonctions."
+                explanation: "Oui, les agents publics ont une obligation stricte de neutralité. Ils doivent traiter tous les usagers de manière égale et ne peuvent manifester leurs convictions religieuses, politiques ou philosophiques dans l'exercice de leurs fonctions.\n\n💡 Astuce pour retenir : Agents publics = obligation STRICTE de neutralité (service neutre et égal pour tous)."
             },
             {
                 question: "Que garantit le principe de laïcité ?",
@@ -938,7 +938,7 @@
                     "L'obligation d'être athée"
                 ],
                 correct: 1,
-                explanation: "Le principe de laïcité garantit la liberté de conscience (croire ou ne pas croire) et l'égalité de tous les citoyens devant la loi, quelles que soient leurs convictions. Il assure aussi la neutralité de l'État."
+                explanation: "Le principe de laïcité garantit la liberté de conscience (croire ou ne pas croire) et l'égalité de tous les citoyens devant la loi, quelles que soient leurs convictions. Il assure aussi la neutralité de l'État.\n\n💡 Astuce pour retenir : Laïcité garantit 2 choses : LIBERTÉ de conscience + ÉGALITÉ devant la loi."
             },
             {
                 question: "A-t-on le droit de changer de religion ?",
@@ -949,7 +949,7 @@
                     "Seulement avant 18 ans"
                 ],
                 correct: 1,
-                explanation: "Oui, absolument. La liberté de conscience garantie par la laïcité permet à chacun de changer de religion, d'en adopter une ou de ne plus en pratiquer. Personne ne peut être contraint dans ses convictions."
+                explanation: "Oui, absolument. La liberté de conscience garantie par la laïcité permet à chacun de changer de religion, d'en adopter une ou de ne plus en pratiquer. Personne ne peut être contraint dans ses convictions.\n\n💡 Astuce pour retenir : OUI changer de religion = droit garanti (liberté de conscience, pas besoin accord famille)."
             },
             {
                 question: "Que représente la laïcité ?",
@@ -960,7 +960,7 @@
                     "L'obligation de cacher ses convictions"
                 ],
                 correct: 1,
-                explanation: "La laïcité représente la séparation de l'État et des religions, garantissant la neutralité de l'État et la liberté de conscience de chacun. Elle permet la coexistence pacifique de toutes les convictions dans le respect mutuel."
+                explanation: "La laïcité représente la séparation de l'État et des religions, garantissant la neutralité de l'État et la liberté de conscience de chacun. Elle permet la coexistence pacifique de toutes les convictions dans le respect mutuel.\n\n💡 Astuce pour retenir : Laïcité = SÉPARATION État/religions + LIBERTÉ de conscience (pas 'interdiction')."
             },
             {
                 question: "Qu'est-ce qui est interdit par la Charte de la laïcité à l'école ?",
@@ -971,7 +971,7 @@
                     "Avoir des convictions religieuses"
                 ],
                 correct: 1,
-                explanation: "La Charte de la laïcité à l'école interdit le port de signes religieux ostensibles (très visibles). Les élèves peuvent avoir des convictions religieuses et en parler, mais l'école doit rester un espace neutre."
+                explanation: "La Charte de la laïcité à l'école interdit le port de signes religieux ostensibles (très visibles). Les élèves peuvent avoir des convictions religieuses et en parler, mais l'école doit rester un espace neutre.\n\n💡 Astuce pour retenir : Charte laïcité école = interdit signes OSTENSIBLES (pas 'étudier religions', pas 'en parler')."
             },
             {
                 question: "Que dit l'article 1er de la Constitution française ?",
@@ -982,7 +982,7 @@
                     "La France est un État fédéral"
                 ],
                 correct: 1,
-                explanation: "L'article 1er de la Constitution énonce : 'La France est une République indivisible, laïque, démocratique et sociale. Elle assure l'égalité devant la loi de tous les citoyens sans distinction d'origine, de race ou de religion.'"
+                explanation: "L'article 1er de la Constitution énonce : 'La France est une République indivisible, laïque, démocratique et sociale. Elle assure l'égalité devant la loi de tous les citoyens sans distinction d'origine, de race ou de religion.'\n\n💡 Astuce pour retenir : Article 1 = 4 mots-clés : INDIVISIBLE, LAÏQUE, DÉMOCRATIQUE, SOCIALE (I-L-D-S)."
             },
             {
                 question: "Qu'est-ce que l'État de droit ?",
@@ -993,7 +993,7 @@
                     "Un État où seuls les citoyens respectent la loi"
                 ],
                 correct: 1,
-                explanation: "L'État de droit est un système dans lequel tous, y compris les gouvernants et les institutions publiques, sont soumis au respect de la loi. La loi s'impose à tous sans exception et garantit les droits fondamentaux."
+                explanation: "L'État de droit est un système dans lequel tous, y compris les gouvernants et les institutions publiques, sont soumis au respect de la loi. La loi s'impose à tous sans exception et garantit les droits fondamentaux.\n\n💡 Astuce pour retenir : État de droit = TOUS soumis à la loi (citoyens ET pouvoirs publics, sans exception)."
             },
             {
                 question: "Le président de la République a commis un crime. Quelle proposition est correcte ?",
@@ -1004,7 +1004,7 @@
                     "Seul le peuple peut le juger par référendum"
                 ],
                 correct: 1,
-                explanation: "Le président de la République peut être destitué par le Parlement constitué en Haute Cour en cas de manquement à ses devoirs manifestement incompatible avec l'exercice de son mandat. Il peut aussi être poursuivi après son mandat."
+                explanation: "Le président de la République peut être destitué par le Parlement constitué en Haute Cour en cas de manquement à ses devoirs manifestement incompatible avec l'exercice de son mandat. Il peut aussi être poursuivi après son mandat.\n\n💡 Astuce pour retenir : Président criminel = HAUTE COUR peut le destituer (pas immunité totale, État de droit)."
             },
             {
                 question: "La loi est l'expression de :",
@@ -1015,7 +1015,7 @@
                     "La volonté des juges"
                 ],
                 correct: 1,
-                explanation: "Selon la Déclaration des droits de l'homme et du citoyen de 1789, 'la loi est l'expression de la volonté générale'. Elle est votée par les représentants du peuple au Parlement."
+                explanation: "Selon la Déclaration des droits de l'homme et du citoyen de 1789, 'la loi est l'expression de la volonté générale'. Elle est votée par les représentants du peuple au Parlement.\n\n💡 Astuce pour retenir : Loi = expression de la volonté GÉNÉRALE (pas président, pas gouvernement). Démocratie !"
             },
             {
                 question: "Quelle est la durée du mandat du conseil municipal et du maire ?",
@@ -1026,7 +1026,7 @@
                     "7 ans"
                 ],
                 correct: 2,
-                explanation: "Le mandat des conseillers municipaux et du maire est de 6 ans. Les élections municipales ont lieu tous les 6 ans pour renouveler les conseils municipaux qui élisent ensuite le maire."
+                explanation: "Le mandat des conseillers municipaux et du maire est de 6 ans. Les élections municipales ont lieu tous les 6 ans pour renouveler les conseils municipaux qui élisent ensuite le maire.\n\n💡 Astuce pour retenir : Maire = 6 ans (pas 5 comme le Président). Pensez 'SIX ans pour la mairie'."
             },
             {
                 question: "Que garantit l'État de droit ?",
@@ -1037,7 +1037,7 @@
                     "Que seuls les citoyens français ont des droits"
                 ],
                 correct: 1,
-                explanation: "L'État de droit garantit que tous sont soumis à la loi, que les droits fondamentaux sont protégés, que la justice est indépendante et que les pouvoirs publics respectent la Constitution."
+                explanation: "L'État de droit garantit que tous sont soumis à la loi, que les droits fondamentaux sont protégés, que la justice est indépendante et que les pouvoirs publics respectent la Constitution.\n\n💡 Astuce pour retenir : État de droit garantit = RESPECT lois + PROTECTION droits fondamentaux (pas 'État fait ce qu'il veut')."
             },
             {
                 question: "Une personne peut-elle voter à la place d'une autre ?",
@@ -1048,7 +1048,7 @@
                     "Oui, si l'autre personne est malade"
                 ],
                 correct: 0,
-                explanation: "Une personne peut voter à la place d'une autre uniquement si elle a reçu une procuration officielle établie devant les autorités compétentes (police, gendarmerie, tribunal, consulat). C'est le seul moyen légal."
+                explanation: "Une personne peut voter à la place d'une autre uniquement si elle a reçu une procuration officielle établie devant les autorités compétentes (police, gendarmerie, tribunal, consulat). C'est le seul moyen légal.\n\n💡 Astuce pour retenir : Voter pour quelqu'un = OUI avec PROCURATION officielle (pas juste 'famille', pas 'malade')."
             },
             {
                 question: "Est-ce que le vote est obligatoire ?",
@@ -1059,7 +1059,7 @@
                     "Oui, pour tous les citoyens de plus de 25 ans"
                 ],
                 correct: 1,
-                explanation: "En France, le vote est un droit mais pas une obligation légale. Chaque citoyen est libre de voter ou de ne pas voter, même si c'est un devoir civique recommandé pour faire vivre la démocratie."
+                explanation: "En France, le vote est un droit mais pas une obligation légale. Chaque citoyen est libre de voter ou de ne pas voter, même si c'est un devoir civique recommandé pour faire vivre la démocratie.\n\n💡 Astuce pour retenir : Vote = DROIT mais PAS obligation (liberté de voter ou non, pas d'amende)."
             },
             {
                 question: "À la fin de son mandat, le président de la République peut-il décider de rester au pouvoir ?",
@@ -1070,7 +1070,7 @@
                     "Oui, si le Parlement est d'accord"
                 ],
                 correct: 1,
-                explanation: "Non, le président de la République ne peut pas rester au pouvoir à la fin de son mandat. De nouvelles élections doivent obligatoirement être organisées. Il peut se représenter, mais doit être réélu par le peuple."
+                explanation: "Non, le président de la République ne peut pas rester au pouvoir à la fin de son mandat. De nouvelles élections doivent obligatoirement être organisées. Il peut se représenter, mais doit être réélu par le peuple.\n\n💡 Astuce pour retenir : Fin de mandat = NOUVELLES ÉLECTIONS obligatoires (pas 'rester', démocratie oblige)."
             },
             {
                 question: "Qui dirige l'action du Gouvernement ?",
@@ -5982,6 +5982,226 @@
                 ],
                 correct: 1,
                 explanation: "La formation civique obligatoire dure 4 jours au total, chaque journée se déroulant de 9h à 17h avec 1 heure de pause. Ces 4 jours peuvent s'échelonner sur plusieurs semaines (jusqu'à 4 mois maximum). La formation est gratuite et un interprète est présent pour les non-francophones. Une attestation de sérieux et d'assiduité est remise à la fin."
+            },
+            {
+                question: "Quelle est la date exacte de la libération de Paris pendant la Seconde Guerre mondiale ?",
+                options: [
+                    "6 juin 1944",
+                    "25 août 1944",
+                    "8 mai 1945",
+                    "11 novembre 1944"
+                ],
+                correct: 1,
+                explanation: "Paris a été libérée le 25 août 1944 par les Forces françaises libres du général Leclerc et la Résistance intérieure. Le général de Gaulle a prononcé son célèbre discours à l'Hôtel de Ville le lendemain, le 26 août 1944.\n\n💡 Astuce pour retenir : Pensez à '25-8-44' → 2+5 = 7 (août est le 8ème mois) et 4+4 = 8. Ou retenez : 2 mois et demi après le D-Day (6 juin), Paris est libre fin août !"
+            },
+            {
+                question: "Sur quelles plages a eu lieu le débarquement du 6 juin 1944 (Jour J) ?",
+                options: [
+                    "Les plages de Bretagne",
+                    "Les plages de Normandie (Utah, Omaha, Gold, Juno, Sword)",
+                    "Les plages de Provence",
+                    "Les plages du Nord-Pas-de-Calais"
+                ],
+                correct: 1,
+                explanation: "Le débarquement allié du 6 juin 1944 (appelé Jour J ou D-Day) a eu lieu sur cinq plages de Normandie : Utah Beach, Omaha Beach, Gold Beach, Juno Beach et Sword Beach. Cette opération militaire majeure a marqué le début de la libération de l'Europe de l'Ouest.\n\n💡 Astuce pour retenir : Les 5 plages de NORMANDIE → Pensez à 'U.O.G.J.S' (Utah, Omaha, Gold, Juno, Sword). Ou retenez : 2 américaines (U et O), 1 britannique (G), 1 canadienne (J), 1 franco-britannique (S)."
+            },
+            {
+                question: "Quelle est la date exacte de la loi sur la séparation des Églises et de l'État qui fonde la laïcité en France ?",
+                options: [
+                    "14 juillet 1789",
+                    "9 décembre 1905",
+                    "4 octobre 1958",
+                    "21 janvier 1793"
+                ],
+                correct: 1,
+                explanation: "La loi de séparation des Églises et de l'État a été votée le 9 décembre 1905. Cette loi fondamentale établit le principe de laïcité : l'État ne reconnaît, ne salarie ni ne subventionne aucun culte. Elle garantit la liberté de conscience et le libre exercice des cultes.\n\n💡 Astuce pour retenir : '1905' → 19-05 → 1+9 = 10 et 0+5 = 5. Ou retenez : '1905 = Loi de LAÏCITÉ' (début du 20ème siècle). Date : 9/12 → 9+12 = 21 (siècle), ou pensez 'Noël approche' (décembre) !"
+            },
+            {
+                question: "Quelle est la durée du mandat du Président de la République française ?",
+                options: [
+                    "4 ans",
+                    "5 ans (quinquennat)",
+                    "7 ans (septennat)",
+                    "6 ans"
+                ],
+                correct: 1,
+                explanation: "Le mandat du Président de la République est de 5 ans (quinquennat) depuis la réforme constitutionnelle de 2000 sous Jacques Chirac. Avant cela, le mandat présidentiel était de 7 ans (septennat). Le Président peut être réélu une fois consécutivement.\n\n💡 Astuce pour retenir : PRÉSIDENT = 5 ans (QUINQUENNAT). Pensez 'QUINquennat' = 5 (comme les 5 doigts d'une main). Changé en l'an 2000 par Chirac (C2000 → C comme Cinq !)"
+            },
+            {
+                question: "Quelle est la durée du mandat des députés à l'Assemblée nationale ?",
+                options: [
+                    "3 ans",
+                    "5 ans",
+                    "6 ans",
+                    "7 ans"
+                ],
+                correct: 1,
+                explanation: "Les députés de l'Assemblée nationale sont élus pour un mandat de 5 ans au suffrage universel direct. L'Assemblée nationale compte 577 députés qui représentent les citoyens français et votent les lois.\n\n💡 Astuce pour retenir : DÉPUTÉS = 5 ans (même durée que le Président). Retenez : 'Président et Députés ensemble = 5 ans'. Cela permet une cohérence politique !"
+            },
+            {
+                question: "Quelle est la durée du mandat des sénateurs ?",
+                options: [
+                    "3 ans",
+                    "5 ans",
+                    "6 ans",
+                    "9 ans"
+                ],
+                correct: 2,
+                explanation: "Les sénateurs sont élus pour un mandat de 6 ans au suffrage universel indirect. Le Sénat est renouvelé par moitié tous les 3 ans, ce qui assure une continuité dans le fonctionnement de cette chambre haute du Parlement.\n\n💡 Astuce pour retenir : SÉNATEURS = 6 ans (plus long que Président et Députés). Pensez 'SIX pour les SÉnateurs' ou 'Les sages du Sénat = 6 ans'. Renouvelés par moitié = 6÷2 = 3 ans !"
+            },
+            {
+                question: "Quel est le chef-lieu de la région Bretagne ?",
+                options: [
+                    "Nantes",
+                    "Rennes",
+                    "Brest",
+                    "Quimper"
+                ],
+                correct: 1,
+                explanation: "Rennes est le chef-lieu (préfecture) de la région Bretagne et du département d'Ille-et-Vilaine. C'est la capitale administrative, économique et culturelle de la Bretagne.\n\n💡 Astuce pour retenir : RENNES pour BRETAGNE. Pensez 'RENNES rime avec REINE de Bretagne' ! Ou retenez : 'Brest à l'ouest, mais RENNES au centre = capitale'."
+            },
+            {
+                question: "Quelle chaîne de montagnes sépare la France de l'Espagne ?",
+                options: [
+                    "Les Alpes",
+                    "Les Pyrénées",
+                    "Le Jura",
+                    "Les Vosges"
+                ],
+                correct: 1,
+                explanation: "Les Pyrénées constituent une frontière naturelle entre la France et l'Espagne, s'étendant de l'océan Atlantique (golfe de Gascogne) à la mer Méditerranée sur environ 430 km. Le point culminant est le pic d'Aneto (3 404 m) en Espagne.\n\n💡 Astuce pour retenir : PYRÉNÉES au SUD entre France et Espagne. Pensez 'PY comme esPagne' ! Les Alpes sont à l'EST avec l'Italie et la Suisse. Au sud = Pyrénées !"
+            },
+            {
+                question: "Quel est le plus grand port maritime de France ?",
+                options: [
+                    "Le Havre",
+                    "Marseille",
+                    "Bordeaux",
+                    "Nantes"
+                ],
+                correct: 1,
+                explanation: "Marseille possède le plus grand port maritime de France et de la Méditerranée (Grand Port Maritime de Marseille). C'est un port majeur pour le commerce de marchandises, les passagers et les croisières.\n\n💡 Astuce pour retenir : MARSEILLE = Plus grand port (Méditerranée). Pensez 'M pour MARSEILLE et MÉDITERRANÉE' ! C'est la 2ème ville de France, donc logique qu'elle ait le plus grand port."
+            },
+            {
+                question: "Qui était Claude Monet ?",
+                options: [
+                    "Un compositeur français",
+                    "Un peintre impressionniste français",
+                    "Un sculpteur français",
+                    "Un écrivain français"
+                ],
+                correct: 1,
+                explanation: "Claude Monet (1840-1926) était un peintre français, fondateur du mouvement impressionniste. Il est célèbre pour ses séries de Nymphéas, ses paysages et son tableau 'Impression, soleil levant' qui a donné son nom à l'impressionnisme.\n\n💡 Astuce pour retenir : Claude MONET = PEINTRE des Nymphéas (nénuphars). Pensez 'MONET peint la MONNAIE (les Nymphéas à Giverny)' ! Ne pas confondre avec DEBUSSY = compositeur."
+            },
+            {
+                question: "Qui était Claude Debussy ?",
+                options: [
+                    "Un peintre français",
+                    "Un compositeur français",
+                    "Un sculpteur français",
+                    "Un poète français"
+                ],
+                correct: 1,
+                explanation: "Claude Debussy (1862-1918) était un compositeur français majeur, considéré comme le père de la musique impressionniste. Ses œuvres les plus célèbres incluent 'Clair de lune', 'La Mer' et 'Prélude à l'après-midi d'un faune'.\n\n💡 Astuce pour retenir : Claude DEBUSSY = COMPOSITEUR du 'Clair de lune'. Pensez 'DEBUSSY fait de la muSIQUE' ! Ou 'DEBut de la muSIQUE impressionniste'. Ne pas confondre avec MONET = peintre."
+            },
+            {
+                question: "Quels sont les trois grands principes de la devise de la République française ?",
+                options: [
+                    "Patrie, Honneur, Discipline",
+                    "Liberté, Égalité, Fraternité",
+                    "Justice, Force, Sagesse",
+                    "Travail, Famille, Patrie"
+                ],
+                correct: 1,
+                explanation: "La devise de la République française est 'Liberté, Égalité, Fraternité'. Inscrite dans la Constitution, elle trouve son origine dans la Révolution française de 1789 et représente les valeurs fondamentales de la République.\n\n💡 Astuce pour retenir : L.E.F. = Liberté, Égalité, Fraternité (comme les 3 couleurs du drapeau : Bleu, Blanc, Rouge). Retenez l'ordre avec 'L'Éléphant Français' ! C'est LA devise depuis 1789."
+            },
+            {
+                question: "Qu'est-ce que le principe de laïcité garantit aux citoyens ?",
+                options: [
+                    "L'interdiction de toute pratique religieuse",
+                    "La liberté de conscience et l'égalité devant la loi quelles que soient leurs croyances",
+                    "L'obligation d'être athée",
+                    "Le droit de ne pratiquer que la religion catholique"
+                ],
+                correct: 1,
+                explanation: "Le principe de laïcité garantit la liberté de conscience (le droit de croire ou de ne pas croire) et l'égalité de tous les citoyens devant la loi, quelles que soient leurs convictions religieuses. Il assure aussi la neutralité de l'État vis-à-vis des religions.\n\n💡 Astuce pour retenir : LAÏCITÉ = LIBERTÉ de conscience + ÉGALITÉ (croire ou ne pas croire). Pensez 'LAÏcité = LIberté' ! L'État est neutre, mais vous êtes libre."
+            },
+            {
+                question: "Combien y a-t-il de députés à l'Assemblée nationale française ?",
+                options: [
+                    "348 députés",
+                    "577 députés",
+                    "650 députés",
+                    "400 députés"
+                ],
+                correct: 1,
+                explanation: "L'Assemblée nationale française est composée de 577 députés élus au suffrage universel direct pour 5 ans. Ils représentent les citoyens dans toutes les circonscriptions de France métropolitaine et d'outre-mer.\n\n💡 Astuce pour retenir : 577 députés. Pensez '5-77' = 5 (comme 5 ans de mandat) + 77 (département de Seine-et-Marne). Ou retenez : 'PLUS de députés (577) que de sénateurs (348)' !"
+            },
+            {
+                question: "Combien y a-t-il de sénateurs au Sénat français ?",
+                options: [
+                    "250 sénateurs",
+                    "348 sénateurs",
+                    "400 sénateurs",
+                    "577 sénateurs"
+                ],
+                correct: 1,
+                explanation: "Le Sénat français est composé de 348 sénateurs élus au suffrage universel indirect pour 6 ans. Ils représentent les collectivités territoriales de la République. Le Sénat est renouvelé par moitié tous les 3 ans.\n\n💡 Astuce pour retenir : 348 sénateurs. Pensez '3-48' = 3 (renouvelé tous les 3 ans) + 48 (moins de 400). Ou retenez : 'MOINS de sénateurs (348) que de députés (577)' !"
+            },
+            {
+                question: "Quel événement historique est commémoré le 8 mai en France ?",
+                options: [
+                    "La prise de la Bastille",
+                    "La capitulation de l'Allemagne nazie en 1945 (fin de la Seconde Guerre mondiale en Europe)",
+                    "La libération de Paris",
+                    "L'armistice de 1918"
+                ],
+                correct: 1,
+                explanation: "Le 8 mai est un jour férié qui commémore la victoire des Alliés sur l'Allemagne nazie et la fin de la Seconde Guerre mondiale en Europe. L'Allemagne a capitulé le 8 mai 1945, marquant la fin du conflit en Europe.\n\n💡 Astuce pour retenir : 8 MAI 1945 = Fin de la 2nde Guerre mondiale en Europe. Pensez '8-5-45' → 8 mai 45. Ou '8 MAI = PAIX' ! (11 novembre 1918 = fin 1ère Guerre mondiale)"
+            },
+            {
+                question: "Quels sont les symboles officiels de la République française inscrits dans la Constitution ?",
+                options: [
+                    "Le coq gaulois et la tour Eiffel",
+                    "Le drapeau tricolore, la Marseillaise, Marianne et la devise 'Liberté, Égalité, Fraternité'",
+                    "Le béret et la baguette",
+                    "La fleur de lys et le Lion"
+                ],
+                correct: 1,
+                explanation: "Les symboles officiels de la République française inscrits dans la Constitution (article 2) sont : le drapeau bleu, blanc, rouge ; l'hymne national la Marseillaise ; la devise 'Liberté, Égalité, Fraternité' ; et Marianne qui représente allégoriquement la République.\n\n💡 Astuce pour retenir : 4 symboles = DRAPEAU + MARSEILLAISE + DEVISE + MARIANNE. Pensez aux '4 M' : Marseillaise, Marianne, drapeau bleu-blanc-rouge (Mer), devise (Mots) !"
+            },
+            {
+                question: "Quelle est la principale valeur du principe d'égalité dans la République française ?",
+                options: [
+                    "Tous les citoyens ont les mêmes revenus",
+                    "Tous les citoyens sont égaux devant la loi sans distinction d'origine, de race ou de religion",
+                    "Tous les citoyens doivent avoir le même métier",
+                    "Tous les citoyens doivent penser la même chose"
+                ],
+                correct: 1,
+                explanation: "Le principe d'égalité signifie que tous les citoyens sont égaux devant la loi, sans distinction d'origine, de race ou de religion. Chacun bénéficie des mêmes droits et des mêmes devoirs. Ce principe est inscrit dans l'article 1er de la Constitution.\n\n💡 Astuce pour retenir : ÉGALITÉ = Égaux DEVANT LA LOI (pas égalité des revenus !). Pensez 'Même loi pour tous, SANS DISTINCTION'. Article 1er de la Constitution !"
+            },
+            {
+                question: "Quel port français se situe sur la côte Atlantique ?",
+                options: [
+                    "Marseille",
+                    "Le Havre",
+                    "Nice",
+                    "Toulon"
+                ],
+                correct: 1,
+                explanation: "Le Havre est un grand port maritime français situé sur la côte Atlantique, en Normandie, à l'embouchure de la Seine. C'est le deuxième plus grand port de France après Marseille. D'autres ports atlantiques importants sont Bordeaux, Nantes-Saint-Nazaire et Brest.\n\n💡 Astuce pour retenir : LE HAVRE = ATLANTIQUE (Normandie). Pensez 'HAVRE comme AVOIR l'océan Atlantique' ! Marseille, Nice, Toulon = Méditerranée (sud-est)."
+            },
+            {
+                question: "Qui a écrit le roman 'Les Misérables' ?",
+                options: [
+                    "Émile Zola",
+                    "Victor Hugo",
+                    "Alexandre Dumas",
+                    "Gustave Flaubert"
+                ],
+                correct: 1,
+                explanation: "Victor Hugo (1802-1885) est l'auteur du célèbre roman 'Les Misérables' publié en 1862. Grand écrivain français du romantisme, il a également écrit 'Notre-Dame de Paris' et de nombreux recueils de poésie. Il était aussi un homme politique engagé pour la République et la justice sociale.\n\n💡 Astuce pour retenir : VICTOR HUGO = Les Misérables + Notre-Dame de Paris. Pensez 'HUGO = ÉNORME' (grandes œuvres) ! Il défendait aussi la République et la justice."
             }
         ];
 
