@@ -6308,6 +6308,8 @@
                 hint.textContent = 'Activez pour voir la bonne réponse automatiquement';
                 hint.style.color = '#888';
             }
+            // Mettre à jour l'état des boutons
+            updateButtons();
         }
 
         // Fonction pour afficher la bonne réponse (mode apprentissage)
@@ -6519,9 +6521,15 @@
             const totalQuestions = isRetryMode ? retryQuestionsList.length : questions.length;
 
             document.getElementById('prev-btn').disabled = currentQuestion === 0;
-            document.getElementById('next-btn').disabled = userAnswers[currentQuestion] === undefined;
 
-            if (currentQuestion === totalQuestions - 1 && userAnswers[currentQuestion] !== undefined) {
+            // En mode apprentissage, le bouton Suivant est toujours activé
+            if (learningMode) {
+                document.getElementById('next-btn').disabled = false;
+            } else {
+                document.getElementById('next-btn').disabled = userAnswers[currentQuestion] === undefined;
+            }
+
+            if (currentQuestion === totalQuestions - 1 && (userAnswers[currentQuestion] !== undefined || learningMode)) {
                 document.getElementById('next-btn').textContent = 'Terminer ✓';
             } else {
                 document.getElementById('next-btn').textContent = 'Suivant →';
