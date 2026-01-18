@@ -393,6 +393,7 @@
 
         .toggle-switch {
             position: relative;
+            display: inline-block;
             width: 50px;
             height: 26px;
         }
@@ -401,6 +402,7 @@
             opacity: 0;
             width: 0;
             height: 0;
+            position: absolute;
         }
 
         .toggle-slider {
@@ -410,6 +412,8 @@
             left: 0;
             right: 0;
             bottom: 0;
+            width: 50px;
+            height: 26px;
             background-color: #ccc;
             transition: 0.3s;
             border-radius: 26px;
@@ -472,11 +476,11 @@
 
         <div id="quiz-container">
             <div class="learning-mode-container">
-                <label for="learning-mode">📚 Mode Apprentissage</label>
-                <div class="toggle-switch">
+                <span>📚 Mode Apprentissage</span>
+                <label class="toggle-switch">
                     <input type="checkbox" id="learning-mode" onchange="toggleLearningMode()">
                     <span class="toggle-slider"></span>
-                </div>
+                </label>
             </div>
             <div class="learning-mode-hint" id="learning-hint">Activez pour voir la bonne réponse automatiquement</div>
 
