@@ -6316,7 +6316,7 @@
             updateButtons();
         }
 
-        // Fonction pour afficher la bonne réponse (mode apprentissage)
+        // Fonction pour afficher la bonne réponse et l'explication (mode apprentissage)
         function showCorrectAnswer() {
             const currentQ = isRetryMode ? questions[retryQuestionsList[currentQuestion]] : questions[currentQuestion];
             const options = document.querySelectorAll('.option');
@@ -6326,6 +6326,12 @@
                     option.style.background = 'linear-gradient(135deg, #f0f9f3 0%, #e8f5e9 100%)';
                 }
             });
+
+            // Afficher l'explication
+            const feedback = document.getElementById('feedback');
+            feedback.innerHTML = `<strong>✅ Bonne réponse : ${currentQ.options[currentQ.correct]}</strong><br><br>${currentQ.explanation}`;
+            feedback.className = 'feedback correct';
+            feedback.classList.remove('hidden');
         }
 
         // Fonction pour mélanger un tableau (algorithme Fisher-Yates)
